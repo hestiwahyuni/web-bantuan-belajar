@@ -1,0 +1,228 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Header Styles */
+.hesti-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hesti-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.hesti-title {
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hesti-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hesti-nav-list {
+    list-style: none;
+}
+
+.hesti-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.hesti-nav-link:hover {
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+/* About Section */
+.hesti-about {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.hesti-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Study Tips Section */
+.hesti-study-tips {
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+.hesti-tip {
+    margin-bottom: 40px;
+}
+
+.hesti-tip-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.hesti-tip-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.hesti-tip::before {
+    content: '🔹';
+    font-size: 2rem;
+    color: #3498db;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Resources Section */
+.hesti-resources {
+    background-color: #ffffff;
+}
+
+.hesti-resource {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.hesti-resource-img {
+    max-width: 100%;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.hesti-resource-title {
+    font-size: 1.6rem;
+    color: #2c3e50;
+}
+
+.hesti-resource-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.hesti-faq {
+    background-color: #f9fafb;
+}
+
+.hesti-faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 20px;
+}
+
+.hesti-faq-question {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.hesti-faq-answer {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* Footer Styles */
+.hesti-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hesti-footer-text {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hesti-container {
+        width: 90%;
+    }
+
+    .hesti-nav-link {
+        padding: 10px 15px;
+    }
+
+    .hesti-study-tips .hesti-tip,
+    .hesti-resource {
+        margin-bottom: 30px;
+    }
+
+    .hesti-resource {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hesti-resource-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hesti-title {
+        font-size: 2rem;
+    }
+
+    .hesti-nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .hesti-tip-title {
+        font-size: 1.5rem;
+    }
+
+    .hesti-footer-text {
+        font-size: 0.9rem;
+    }
+}
